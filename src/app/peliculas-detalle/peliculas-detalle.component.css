@@ -1,0 +1,119 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* La imagen de fondo a utilizar */
+    background-image: url('../../assets/img/Fondo.png') ;
+    height: 100%;
+    /* Centrar la imagen para que se vea bonita*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center
+    
+  }
+
+ td {
+    padding-top: 30%;  
+    vertical-align: top;
+    text-align: center;
+    
+    }
+
+  label.titulo {
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    text-align: center;
+ 
+}
+label.tituloDescripcion {
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    text-align: center;
+ 
+}
+label.sipnosis {
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    text-align: center;
+ 
+}
+label.sipnosisDescripcion {
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    text-align: center;
+ 
+}
+label.director {
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    text-align: center;
+ 
+}
+label.directorDescripcion {
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    text-align: center;
+ 
+}
+label.actores {
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    text-align: center;
+ 
+}
+label.actoresDescripcion {
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    text-align: center;
+ 
+}
+label.ano {
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    text-align: center;
+ 
+}
+
+input.botonPlanetas {
+    width: 10em;  
+    height: 2em;
+    line-height: 26px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+ 
+}
+input.botonNaves {
+    width: 10em;  
+    height: 2em;
+    line-height: 26px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+ 
+}
