@@ -7,31 +7,22 @@
     <table >
         <td width="30%">
           <div  id="divbusquedaAno"> 
-            <input type="text" value="Search" class="busqueda">
-            <input type="submit" id="botonBusqueda" value="Busqueda por año" class="botonBusqueda" >
+            <input #anio type="text" value="Search" class="busqueda">
+            <button class="botonBusqueda"  (click)="busquedadPorAnio($event, anio.value)">Busqueda por año</button>
           </div>
           <div id="divbusquedaTitulo">
-            <input type="text" value="Search" class="busquedaTitulo">
-            <input type="submit" id="botonBusqueda" value="Busqueda por titulo" class="botonBusquedaTitulo" >
+            <input #titulo type="text" value="Search" class="busquedaTitulo">
+            <button class="botonBusqueda"  (click)="busquedadPorTitulo($event, titulo.value)">Busqueda por titulo</button>
           </div>
+          <button class="botonBusqueda"  (click)="consultarPeliculasServicio()">Limpiar</button>
       
         </td>
     <td>
       <table bgcolor="#FFFFFF">
-        <tr>
-          <th><a routerLink="/peliculasDetalle" ><img src="assets/img/Pelicula1.png" style="width:50%"> </a></th>
-          <th><a routerLink="/peliculasDetalle" ><img src="assets/img/Pelicula2.png" style="width:50%"> </a></th>
-          <th><a routerLink="/peliculasDetalle" ><img src="assets/img/Pelicula3.png" style="width:50%"> </a></th>
+        <tr *ngFor="let item of peliculas.results">
+          <td>{{item.title}}   {{item.release_date}}</td>
+          <th><a  [routerLink]="['/peliculasDetalle/',item.episode_id]" > <img src="{{'assets/img/Pelicula'+item.episode_id+'.png'}}" style="width:50%" /> </a></th>
         </tr>
-        <tr>
-          <th><a routerLink="/peliculasDetalle" ><img src="assets/img/Pelicula4.png" style="width:50%"> </a></th>
-          <th><a routerLink="/peliculasDetalle" ><img src="assets/img/Pelicula5.png" style="width:50%"> </a></th>
-          <th><a routerLink="/peliculasDetalle" ><img src="assets/img/Pelicula6.png" style="width:50%"> </a></th>
-       </tr>
-       <tr>
-        <th><a routerLink="/peliculasDetalle" ><img src="assets/img/Pelicula7.png" style="width:50%"> </a></th>
-       
-       </tr>
       </table>
       
     </td>

@@ -10,11 +10,11 @@ import { NavesDetalleComponent } from './naves-detalle/naves-detalle.component';
 
 const routes: Routes = [
   {path:'peliculas', component:PeliculasComponent},
-  {path:'peliculasDetalle', component:PeliculasDetalleComponent},
-  {path:'planetas', component:PlanetasComponent},
-  {path:'planetasDetalle', component:PlanetasDetalleComponent},
-  {path:'naves', component:NavesComponent},
-  {path:'navesDetalle', component:NavesDetalleComponent}
+  {path:'peliculasDetalle/:id', component:PeliculasDetalleComponent},
+  {path:'planetas/:id', component:PlanetasComponent},
+  {path:'planetasDetalle/:id', component:PlanetasDetalleComponent},
+  {path:'naves/:id', component:NavesComponent},
+  {path:'navesDetalle/:id', component:NavesDetalleComponent}
 ];
 
 @NgModule({
